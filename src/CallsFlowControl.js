@@ -148,7 +148,7 @@ function CallsFlowControl() {
   };
 
   this.handleNewRTCSession = (rtcPayload) => {
-    const { session: call } = rtcPayload;
+    const { session: call, request } = rtcPayload;
     if (call.direction === 'incoming') {
       this.callsQueue.push(call);
       this.onCallActionConnection('incomingCall', call);
@@ -192,28 +192,24 @@ function CallsFlowControl() {
   };
 
   this.init = () => {
-    try {
-      this.phone = new UA(this.config);
-      this.phone.on('newRTCSession', this.handleNewRTCSession.bind(this));
-      const binds = [
-        'connected',
-        'disconnected',
-        'registered',
-        'unregistered',
-        'registrationFailed',
-        'invite',
-        'message',
-        'connecting'
-      ];
-      _.forEach(binds, (value) => {
-        this.phone.on(value, (e) => {
-          this.engineEvent(value, e);
-        });
+    this.phone = new UA(this.config);
+    this.phone.on('newRTCSession', this.handleNewRTCSession.bind(this));
+    const binds = [
+      'connected',
+      'disconnected',
+      'registered',
+      'unregistered',
+      'registrationFailed',
+      'invite',
+      'message',
+      'connecting'
+    ];
+    _.forEach(binds, (value) => {
+      this.phone.on(value, (e) => {
+        this.engineEvent(value, e);
       });
-      this.initiated = true;
-    } catch (e) {
-      console.log(e);
-    }
+    });
+    this.initiated = true;
   };
 
   this.call = (to) => {
@@ -267,12 +263,7 @@ function CallsFlowControl() {
   };
 
   this.hungup = (e) => {
-    try {
-      this.phone._sessions[e].terminate();
-    } catch (e) {
-      console.log(e);
-      console.log('Call already terminated');
-    }
+    this.phone._sessions[e].terminate();
   };
 
   this.start = () => {
@@ -281,11 +272,8 @@ function CallsFlowControl() {
       console.log('Please call .init() before connect');
       return;
     }
-
     if (this.config.debug) {
       debug.enable('JsSIP:*');
-    } else {
-      debug.disable();
     }
     this.phone.start();
   };
