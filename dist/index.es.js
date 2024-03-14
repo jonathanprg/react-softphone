@@ -18936,7 +18936,7 @@ function SwipeCaruselBlock(_ref) {
             return (
               /*#__PURE__*/
               // Show hold Call info
-              React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Duration:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Number:", displayCall.callNumber), /*#__PURE__*/React.createElement(Typography, null, "Side:", displayCall.direction))
+              React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Duração:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Number:", displayCall.callNumber), /*#__PURE__*/React.createElement(Typography, null, "Side:", displayCall.direction))
             );
           }
 
@@ -18944,21 +18944,21 @@ function SwipeCaruselBlock(_ref) {
             return (
               /*#__PURE__*/
               // Show In Transfer info
-              React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Side:", displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Duration:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Number:", ' ', displayCall.callNumber), /*#__PURE__*/React.createElement(Typography, null, "Transfer to :", ' ', displayCall.transferNumber), /*#__PURE__*/React.createElement(Typography, null, displayCall.attendedTransferOnline.length > 1 && !displayCall.inConference ? /*#__PURE__*/React.createElement("span", null, 'Talking with :', ' ', displayCall.attendedTransferOnline) : null))
+              React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Direção:", displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Duração:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Número:", ' ', displayCall.callNumber), /*#__PURE__*/React.createElement(Typography, null, "Transferido para :", ' ', displayCall.transferNumber), /*#__PURE__*/React.createElement(Typography, null, displayCall.attendedTransferOnline.length > 1 && !displayCall.inConference ? /*#__PURE__*/React.createElement("span", null, 'Conversando com :', ' ', displayCall.attendedTransferOnline) : null))
             );
           }
 
           return (
             /*#__PURE__*/
             // Show In Call info
-            React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Side:", displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Duration:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Number:", displayCall.callNumber))
+            React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Direção:", displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Duração:", duration[key].duration), /*#__PURE__*/React.createElement(Typography, null, "Número:", displayCall.callNumber))
           );
         }
 
         return (
           /*#__PURE__*/
           // Show Calling info
-          React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Side:", ' ', displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Number:", ' ', displayCall.callNumber))
+          React.createElement("div", null, /*#__PURE__*/React.createElement(Typography, null, "Status:", ' ', displayCall.callInfo), /*#__PURE__*/React.createElement(Typography, null, "Direção:", ' ', displayCall.direction), /*#__PURE__*/React.createElement(Typography, null, "Número:", ' ', displayCall.callNumber))
         );
       }
 
