@@ -19163,16 +19163,16 @@ function StatusBlock(_ref) {
   }, !connectingPhone ? connectedPhone ? /*#__PURE__*/React.createElement(Label, {
     className: classes.online,
     color: "primary"
-  }, "ONLINE") : /*#__PURE__*/React.createElement(Label, {
+  }, "CONECTADO") : /*#__PURE__*/React.createElement(Label, {
     className: classes.offline,
     color: "primary"
-  }, "OFFLINE") : !connectedPhone ? /*#__PURE__*/React.createElement(Label, {
+  }, "DESCONECTADO") : !connectedPhone ? /*#__PURE__*/React.createElement(Label, {
     className: classes.online,
     color: "primary"
-  }, "CONNECTING") : /*#__PURE__*/React.createElement(Label, {
+  }, "CONECTANDO") : /*#__PURE__*/React.createElement(Label, {
     className: classes.offline,
     color: "primary"
-  }, "DISCONNECTING"))));
+  }, "DESCONECTANDO"))));
 }
 
 var useStyles$5 = makeStyles(function (theme) {
