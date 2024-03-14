@@ -204,20 +204,20 @@ function SwipeCaruselBlock({
                           {displayCall.callInfo}
                         </Typography>
                         <Typography>
-                          Side:
+                          Direção:
                           {displayCall.direction}
                         </Typography>
                         <Typography>
-                          Duration:
+                          Duração:
                           {duration[key].duration}
                         </Typography>
                         <Typography>
-                          Number:
+                          Número:
                           {' '}
                           {displayCall.callNumber}
                         </Typography>
                         <Typography>
-                          Transfer to :
+                          Transferida para :
                           {' '}
                           {displayCall.transferNumber}
                         </Typography>
@@ -225,7 +225,7 @@ function SwipeCaruselBlock({
                           {displayCall.attendedTransferOnline.length > 1 &&
                           !displayCall.inConference ? (
                             <span>
-                                { 'Talking with :' }
+                                { 'Conversando com :' }
                                 {' '}
                                 {displayCall.attendedTransferOnline}
                               </span>
@@ -244,15 +244,15 @@ function SwipeCaruselBlock({
                         {displayCall.callInfo}
                       </Typography>
                       <Typography>
-                        Side:
+                        Direção:
                         {displayCall.direction}
                       </Typography>
                       <Typography>
-                        Duration:
+                        Duração:
                         {duration[key].duration}
                       </Typography>
                       <Typography>
-                        Number:
+                        Número:
                         {displayCall.callNumber}
                       </Typography>
 
@@ -269,12 +269,12 @@ function SwipeCaruselBlock({
                       {displayCall.callInfo}
                     </Typography>
                     <Typography>
-                      Side:
+                      Direção:
                       {' '}
                       {displayCall.direction}
                     </Typography>
                     <Typography>
-                      Number:
+                      Número:
                       {' '}
                       {displayCall.callNumber}
                     </Typography>
