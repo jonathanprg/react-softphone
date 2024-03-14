@@ -71,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#d0f6bb'
   },
   text: {
-    color: 'black'
+    color: 'black',
+    marginLeft: 10
   }
 
 }))
@@ -148,9 +149,9 @@ function SwipeCaruselBlock({
           variant='fullWidth'
           aria-label='full width tabs example'
         >
-          <Tab className={classes.tabs} label='CH 1' {...a11yProps(0)} />
-          <Tab className={classes.tabs} label='CH 2' {...a11yProps(1)} />
-          <Tab className={classes.tabs} label='Ch 3' {...a11yProps(2)} />
+          <Tab className={classes.tabs} label='Telefone 1' {...a11yProps(0)} />
+          <Tab className={classes.tabs} label='Telefone 2' {...a11yProps(1)} />
+          <Tab className={classes.tabs} label='Telefone 3' {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -179,15 +180,15 @@ function SwipeCaruselBlock({
                           {displayCall.callInfo}
                         </Typography>
                         <Typography>
-                          Duration:
+                          Duração:
                           {duration[key].duration}
                         </Typography>
                         <Typography>
-                          Number:
+                          Número:
                           {displayCall.callNumber}
                         </Typography>
                         <Typography>
-                          Side:
+                          Direção:
                           {displayCall.direction}
                         </Typography>
                       </div>
