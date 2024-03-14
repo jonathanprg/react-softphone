@@ -10,7 +10,9 @@
     "npm": ">=5"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "buildOld": "rollup -c",
+    "buildSafe": "rollup -c --bundleConfigAsCjs"
   },
   "repository": {
     "type": "git",
@@ -28,17 +30,17 @@
   },
   "homepage": "https://github.com/prinze77/react-softphone#readme",
   "peerDependencies": {
-    "react": "^16.13.1",
-    "jssip": "3.3.6",
-    "react-dom": "^16.13.1",
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.48",
     "@material-ui/pickers": "^3.2.10",
     "@material-ui/styles": "^4.9.6",
+    "clsx": "^1.1.0",
+    "jssip": "3.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "react-swipeable-views": "^0.13.9",
-    "clsx": "^1.1.0"
+    "react-swipeable-views": "^0.13.9"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -78,7 +80,7 @@
     "react-scripts": "^3.4.0",
     "react-test-renderer": "^16.9.0",
     "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
