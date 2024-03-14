@@ -18906,13 +18906,13 @@ function SwipeCaruselBlock(_ref) {
     "aria-label": "full width tabs example"
   }, /*#__PURE__*/React.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "CH 1"
+    label: "Ramal 1"
   }, a11yProps(0))), /*#__PURE__*/React.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "CH 2"
+    label: "Ramal 2"
   }, a11yProps(1))), /*#__PURE__*/React.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "Ch 3"
+    label: "Ramal 3"
   }, a11yProps(2))))), /*#__PURE__*/React.createElement(SwipeableViews, {
     axis: theme.direction === 'rtl' ? 'x-reverse' : 'x',
     index: activeChannel,
