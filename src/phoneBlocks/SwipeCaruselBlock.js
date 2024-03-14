@@ -170,7 +170,7 @@ function SwipeCaruselBlock({
                           {displayCall.callInfo}
                         </Typography>
                         <Typography>
-                          Duração:
+                          Duration:
                           {duration[key].duration}
                         </Typography>
                         <Typography>
@@ -198,7 +198,7 @@ function SwipeCaruselBlock({
                           {displayCall.direction}
                         </Typography>
                         <Typography>
-                          Duração:
+                          Duration:
                           {duration[key].duration}
                         </Typography>
                         <Typography>
@@ -237,7 +237,7 @@ function SwipeCaruselBlock({
                         {displayCall.direction}
                       </Typography>
                       <Typography>
-                        Duração:
+                        Duration:
                         {duration[key].duration}
                       </Typography>
                       <Typography>
