@@ -18911,13 +18911,13 @@ function SwipeCaruselBlock(_ref) {
     "aria-label": "full width tabs example"
   }, /*#__PURE__*/React__default.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "CH 1"
+    label: "Telefone 1"
   }, a11yProps(0))), /*#__PURE__*/React__default.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "CH 2"
+    label: "Telefone 2"
   }, a11yProps(1))), /*#__PURE__*/React__default.createElement(Tab, _extends({
     className: classes.tabs,
-    label: "Ch 3"
+    label: "Telefone 3"
   }, a11yProps(2))))), /*#__PURE__*/React__default.createElement(SwipeableViews, {
     axis: theme.direction === 'rtl' ? 'x-reverse' : 'x',
     index: activeChannel,
@@ -19046,7 +19046,7 @@ function SettingsBlock(_ref) {
       color: "primary",
       onChange: handleConnectOnStart
     }),
-    label: "Auto Connect",
+    label: "Iniciar automaticamente",
     labelPlacement: "start"
   }), /*#__PURE__*/React__default.createElement(core.FormControlLabel, {
     value: "top",
@@ -19056,7 +19056,7 @@ function SettingsBlock(_ref) {
       color: "primary",
       onChange: handleConnectPhone
     }),
-    label: connectedPhone ? 'Disconnect' : 'Connect',
+    label: connectedPhone ? 'Desconectado' : 'Conectado',
     labelPlacement: "start"
   }), connectingPhone ? /*#__PURE__*/React__default.createElement(core.CircularProgress, {
     size: 25
@@ -19168,16 +19168,16 @@ function StatusBlock(_ref) {
   }, !connectingPhone ? connectedPhone ? /*#__PURE__*/React__default.createElement(Label, {
     className: classes.online,
     color: "primary"
-  }, "ONLINE") : /*#__PURE__*/React__default.createElement(Label, {
+  }, "CONECTADO") : /*#__PURE__*/React__default.createElement(Label, {
     className: classes.offline,
     color: "primary"
-  }, "OFFLINE") : !connectedPhone ? /*#__PURE__*/React__default.createElement(Label, {
+  }, "DESCONECTAOO") : !connectedPhone ? /*#__PURE__*/React__default.createElement(Label, {
     className: classes.online,
     color: "primary"
-  }, "CONNECTING") : /*#__PURE__*/React__default.createElement(Label, {
+  }, "CONECTANDO") : /*#__PURE__*/React__default.createElement(Label, {
     className: classes.offline,
     color: "primary"
-  }, "DISCONNECTING"))));
+  }, "DESCONECTANDO"))));
 }
 
 var useStyles$5 = styles.makeStyles(function (theme) {
